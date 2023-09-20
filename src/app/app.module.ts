@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +8,8 @@ import { MainCardComponent } from './components/main-card/main-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { BlogTitleComponent } from './components/blog-title/blog-title.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ArticleComponent } from './pages/article/article.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { HeaderComponent } from './components/header/header.component';
     MainCardComponent,
     SmallCardComponent,
     BlogTitleComponent,
-    HeaderComponent
+    HeaderComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
