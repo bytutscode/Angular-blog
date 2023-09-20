@@ -1,0 +1,28 @@
+.small-card-container {
+    width: 500px;
+    padding: 15px;
+}
+
+.small-card-container a {
+    display: flex;
+
+    gap: 12px;
+
+}
+
+.small-card-img {
+    width: 200px;
+    min-width: 200px;
+    height: 100px;
+}
+
+.small-card-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.small-card-title h3 {
+    font-size: 23px;
+
+}

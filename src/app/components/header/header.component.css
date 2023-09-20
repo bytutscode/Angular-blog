@@ -1,0 +1,10 @@
+.header-container {
+    padding: 15px;
+}
+
+.header-container>ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+}

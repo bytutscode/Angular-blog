@@ -1,0 +1,12 @@
+.articles-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

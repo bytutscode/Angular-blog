@@ -1,0 +1,10 @@
+.blog-title-container {
+    margin-bottom: 20px;
+}
+
+.blog-title-container>h1 {
+    text-transform: uppercase;
+    font-size: 135px;
+    text-align: center;
+    margin: 20px;
+}
