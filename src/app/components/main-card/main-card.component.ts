@@ -10,6 +10,6 @@ export class MainCardComponent {
   @Input() articlePhoto: string = '';
   @Input() articleTitle: string = '';
   @Input() articleDescription: string = '';
-  @Input() id: string = '';
+  @Input() id: string | number = '';
 
 }

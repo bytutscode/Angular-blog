@@ -1,14 +1,22 @@
 <main>
     <app-blog-title></app-blog-title>
     <div class="articles-container">
-        <app-main-card articlePhoto="https://picsum.photos/500/354" articleDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repudiandae, error deserunt inventore a
-        itaque aliquid libero rerum, pariatur velit minima alias nesciunt ullam. Officiis?"
-            articleTitle="Algum titulo aqui" id="1">
+        <app-main-card  
+            [id]="articlesArray[0].id" 
+            [articlePhoto]="articlesArray[0].photoURL"
+            [articleDescription]="articlesArray[0].description" 
+            [articleTitle]="articlesArray[0].title">
         </app-main-card>
-        <aside>
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
-            <app-small-card></app-small-card>
+        <aside >
+            <ng-container *ngFor="let article of articlesArray; let i = index;">
+                <app-small-card 
+                    *ngIf="i > 0"
+                    [id]="article.id"
+                    [photoURL]="article.photoURL"
+                    [description]="article.description"
+                    [title]="article.title"
+                ></app-small-card>
+            </ng-container>
         </aside>
     </div>
 </main>

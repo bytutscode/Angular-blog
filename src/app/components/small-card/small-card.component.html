@@ -1,10 +1,10 @@
 <article class="small-card-container">
-    <a href="#">
+    <a [routerLink]="['article', id]">
         <div class="small-card-img">
-            <img src="https://picsum.photos/400/200" alt="">
+            <img src="{{photoURL}}" alt="">
         </div>
         <div class="small-card-title">
-            <h3>The title goes here... Lorem ipsum dolor sit amet</h3>
+            <h3>{{title}}</h3>
         </div>
     </a>
 </article>

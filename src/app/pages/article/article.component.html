@@ -1,1 +1,13 @@
-<p>article works!</p>
+<hr>
+<article class="article-container">
+    <div class="article-title">
+        <h1>{{article.title}}</h1>
+    </div>
+    <div class="article-image">
+        <img src="{{article.photoURL}}" alt=""  loading="lazy">
+    </div>
+    <div class="article-content">
+        <p>{{article.description}}</p>
+    </div>
+</article>
+<button [routerLink]="['']" type="button">Voltar</button>
